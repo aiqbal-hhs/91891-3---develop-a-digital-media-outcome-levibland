@@ -1,9 +1,9 @@
 /*** IMPORTS ***/
-@import "_navbar.css";
-@import "_hero_section.css";
-@import "_info_section.css";
-@import "_courses.css";
-@import "_footer.css";
+@import "./_navbar.css";
+@import "./_hero_section.css";
+@import "./_info_section.css";
+@import "./_courses.css";
+@import "./_footer.css";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 
 /* Zero out styles for all elements */

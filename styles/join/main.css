@@ -10,3 +10,24 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+/* Add Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Css Variables */
+:root {
+    --fuchsia: #ff0077;
+    --dark: #010606;
+    --white: #ffffff;
+    --extra-dark: #0d0d0d;
+    --very-dark: #0c0c0c;
+    --light: #f9f9f9;
+    --black: #000000;
+}
+
+::-webkit-scrollbar {
+    background: var(--black);
+    width: 10px;
+    color: var(--white);
+}
