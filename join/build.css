@@ -218,3 +218,215 @@ html {
         flex-direction: column;
     }
 }
+
+/* Main Nav container styles */
+.Nav {
+    background: transparent;
+    height: 80px;
+    margin-top: -80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    transition: 0.8s all ease;
+}
+
+.Nav.dark {
+    background: var(--dark);
+}
+
+.NavbarContainer {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    padding: 0 24px;
+    max-width: 1100px;
+}
+
+.NavLogo {
+    color: var(--white);
+    justify-self: flex-start;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.LogoImg {
+    width: 54px;
+    height: 54px;
+}
+
+.MobileIcon {
+    display: none;
+}
+
+.NavMenu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    margin-right: -22px;
+}
+
+.NavItem {
+    height: 80px;
+}
+
+.NavLink {
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer;
+}
+
+.NavLink.active {
+    border-bottom: 3px solid var(--fuchsia);
+}
+
+.NavBtn {
+    display: flex;
+    align-items: center;
+}
+
+.NavBtnLink {
+    border-radius: 50px;
+    text-decoration: none;
+    background: var(--fuchsia);
+    white-space: nowrap;
+    padding: 10px 22px;
+    color: var(--white);
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    font-weight: 500;
+}
+
+.NavBtnLink:hover {
+    background: var(--white);
+    color: var(--dark);
+}
+
+.SidebarContainer {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background: var(--extra-dark);
+    display: grid;
+    align-items: center;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+    top: -100%;
+}
+
+.SidebarContainer.active {
+    opacity: 1;
+    top: 0;
+}
+
+.Icon {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.5rem;
+    background: transparent;
+    font-size: 2rem;
+    cursor: pointer;
+    outline: none;
+    color: var(--white);
+}
+
+.SidebarWrapper {
+    color: var(--white);
+}
+
+.SidebarMenu {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 80px);
+    text-align: center;
+}
+
+.SidebarLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    list-style: none;
+    transition: 0.2s ease-in-out;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.SidebarLink:hover {
+    color: var(--fuchsia);
+    transition: 0.2s ease-in-out;
+}
+
+.SideBtnWrap {
+    display: flex;
+    justify-content: center;
+}
+
+.SidebarRoute {
+    border-radius: 50px;
+    background: var(--fuchsia);
+    white-space: nowrap;
+    padding: 16px 64px;
+    color: var(--white);
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+.SidebarRoute:hover {
+    transition: all 0.2s ease-in-out;
+    background: var(--white);
+    color: var(--dark);
+}
+
+/*** RESPONSIVE DESIGN ***/
+
+@media screen and (max-width: 768px) {
+    .MobileIcon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+        color: var(--white);
+    }
+
+    .NavMenu {
+        display: none;
+    }
+
+    .NavBtn {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .SidebarMenu {
+        grid-template-rows: repeat(6, 60px);
+    }
+}
