@@ -8,6 +8,7 @@ const burger = document.querySelector(".MobileIcon");
 const sidebarContainer = document.querySelector(".SidebarContainer");
 const nav = document.querySelector(".Nav");
 const heroButton = document.querySelector(".HeroButton");
+const websiteRights = document.querySelector(".WebsiteRights");
 
 /**
  * @dev State variables 
