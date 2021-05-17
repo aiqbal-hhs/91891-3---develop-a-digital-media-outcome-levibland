@@ -104,13 +104,3 @@ heroButton.addEventListener('mouseover', () => {
 heroButton.addEventListener('mouseleave', () => {
     heroButton.innerHTML = 'Courses &nbsp<i class="fas fa-chevron-right"></i>';
 });
-
-/**
- * @dev onload functions
- */
-
-// When page loads, get the current year and then add it to the footer
-window.onload = () => {
-    let year = new Date().getFullYear();
-    websiteRights.innerHTML = "Feng Shui © " + year + " All Rights Reserved. | Website by Levi Bland.";
-}
