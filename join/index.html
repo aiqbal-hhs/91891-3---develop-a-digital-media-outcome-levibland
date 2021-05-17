@@ -1,4 +1,83 @@
 <!DOCTYPE html>
 <html>
-  
+    <!-- Site Metadata -->
+    <head>
+        <!-- Open Sans font provider -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+        <!-- Embedded stylesheet -->
+        <!-- Stylesheet changed from segregated files to one file name "build.css" to make it compatible with gh-pages -->
+        <link href="build.css" rel="stylesheet" />
+        
+        <!-- Stylesheet for webserver providers other than gh-pages -->
+        <!-- Uncomment below for use -->
+        <!-- <link href="./styles/main/main.css" rel="stylesheet"/> -->
+
+        <!-- Favicon -->
+        <link rel="icon" href="../assets/favicon.ico" />
+
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/dcc3b23e04.js" crossorigin="anonymous"></script>
+
+        <!-- Title -->
+        <title>Feng Shui</title>
+    </head>
+
+    <!-- Landing page markup -->
+    <body>
+        <!-- Mobile Navigation -->
+        <div class="SidebarContainer" onClick="setIsOpen">
+            <div class="Icon" onClick="setIsOpen">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="SidebarWrapper">
+                <ul class="SidebarMenu">
+                    <a href="../index.html#about" class="SidebarLink">
+                        About
+                    </a>
+                    <a href="../index.html#learn" class="SidebarLink">
+                        Learn
+                    </a>
+                    <a href="../index.html#courses" class="SidebarLink">
+                        Courses
+                    </a>
+                    <a href="../index.html#join" class="SidebarLink">
+                        Join
+                    </a>
+                </ul>
+                <div class="SideBtnWrap">
+                    <a href="../index.html#courses" class="SidebarRoute">Courses</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="Nav">
+            <div class="NavbarContainer">
+                <a href="../index.html" class="NavLogo">
+                    <img src="../assets/fuchsialogo.png" alt="Logo" class="LogoImg"/>
+                </a>
+                <div class="MobileIcon" onClick="setIsOpen">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="NavMenu">
+                    <li class="NavItem">
+                        <a href="../index.html#about" class="NavLink">About</a>
+                    </li>
+                    <li class="NavItem">
+                        <a href="../index.html#learn" class="NavLink">Learn</a>
+                    </li>
+                    <li class="NavItem">
+                        <a href="../index.html#courses" class="NavLink">Courses</a>
+                    </li>
+                    <li class="NavItem">
+                        <a href="../index.html#join" class="NavLink">Join</a>
+                    </li>
+                </ul>
+                <nav class="NavBtn">
+                    <a href="../index.html#courses" class="NavBtnLink">Courses</a>
+                </nav>
+            </div>
+        </nav>
+    </body>
 </html>
