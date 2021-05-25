@@ -30,195 +30,6 @@ html {
     color: var(--white);
 }
 
-/* TODO: */
-.VideoContainer {
-    background: var(--very-dark);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 30px;
-    height: 800px;
-    z-index: 1;
-    position: relative;
-}
-
-.VideoBg {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
-}
-
-.Video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.FormWrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: #3b3b3b;
-    z-index: 100;
-    height: 500px;
-    width: 500px;
-    border-radius: 50px;
-}
-
-.FooterContainer {
-    background: #101522;
-}
-
-.FooterWrap {
-    padding: 48px 24px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-.FooterLinksContainer {
-    display: flex;
-    justify-content: center;
-}
-
-.FooterLinksWrapper {
-    display: flex;
-}
-
-.FooterLinkItems {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 16px;
-    text-align: left;
-    width: 160px;
-    box-sizing: border-box;
-    color: #fff;
-}
-
-.FooterLinkTitle {
-    font-size: 14px;
-    margin-bottom: 16px;
-}
-
-.FooterLink {
-    color: #fff;
-    text-decoration: none;
-    margin-bottom: 0.5rem;
-    font-size: 14px;
-}
-
-.FooterLink:hover {
-    color: #ff0077;
-    transition: 0.3s ease-out;
-}
-
-.SocialMedia {
-    max-width: 1000px;
-    width: 100%;
-}
-
-.SocialMediaWrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1100px;
-    margin: 40px auto 0 auto;
-}
-
-.SocialLogo {
-    color: #fff;
-    justify-self: start;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 1.5rem;
-    display: flex;
-    align-items: center;
-    margin-bottom: 16px;
-    font-weight: bold;
-}
-
-.WebsiteRights {
-    color: #fff;
-    margin-bottom: 16px;
-}
-
-.SocialIcons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 240px;
-}
-
-.SocialIconLink {
-    color: #fff;
-    font-size: 24px;
-    transition: 0.2s ease-in-out;
-}
-
-.SocialIconLink:hover {
-    color: #ff0077;
-}
-
-.FormH2 {
-    color: #fff;
-    padding-bottom: 50px;
-}
-
-.input {
-    background: #ababab;
-    border: none;
-    width: 250px;
-    height: 50px;
-    border-radius: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-bottom: 50px;
-}
-
-.FormButton {
-    background: var(--fuchsia);
-    border: none;
-    width: 250px;
-    height: 50px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    color: var(--white);
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
-}
-
-.FormButton:hover {
-    background: var(--white);
-    color: #000;
-}
-
-@media screen and (max-width: 820px) {
-    .FooterLinksContainer {
-        padding-top: 32px;
-    }
-
-    .FooterLinksWrapper {
-        flex-direction: column;
-    }
-
-    .SocialMediaWrap {
-        flex-direction: column;
-    }
-}
-
 /* Main Nav container styles */
 .Nav {
     background: transparent;
@@ -428,5 +239,194 @@ html {
 @media screen and (max-width: 480px) {
     .SidebarMenu {
         grid-template-rows: repeat(6, 60px);
+    }
+}
+
+/* TODO: */
+.VideoContainer {
+    background: var(--very-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    height: 800px;
+    z-index: 1;
+    position: relative;
+}
+
+.VideoBg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+}
+
+.Video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.FormWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #3b3b3b;
+    z-index: 100;
+    height: 500px;
+    width: 500px;
+    border-radius: 50px;
+}
+
+.FooterContainer {
+    background: #101522;
+}
+
+.FooterWrap {
+    padding: 48px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.FooterLinksContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.FooterLinksWrapper {
+    display: flex;
+}
+
+.FooterLinkItems {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 16px;
+    text-align: left;
+    width: 160px;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.FooterLinkTitle {
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.FooterLink {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    font-size: 14px;
+}
+
+.FooterLink:hover {
+    color: #ff0077;
+    transition: 0.3s ease-out;
+}
+
+.SocialMedia {
+    max-width: 1000px;
+    width: 100%;
+}
+
+.SocialMediaWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 40px auto 0 auto;
+}
+
+.SocialLogo {
+    color: #fff;
+    justify-self: start;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+
+.WebsiteRights {
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.SocialIcons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+}
+
+.SocialIconLink {
+    color: #fff;
+    font-size: 24px;
+    transition: 0.2s ease-in-out;
+}
+
+.SocialIconLink:hover {
+    color: #ff0077;
+}
+
+.FormH2 {
+    color: #fff;
+    padding-bottom: 50px;
+}
+
+.input {
+    background: #ababab;
+    border: none;
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 50px;
+}
+
+.FormButton {
+    background: var(--fuchsia);
+    border: none;
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.FormButton:hover {
+    background: var(--white);
+    color: #000;
+}
+
+@media screen and (max-width: 820px) {
+    .FooterLinksContainer {
+        padding-top: 32px;
+    }
+
+    .FooterLinksWrapper {
+        flex-direction: column;
+    }
+
+    .SocialMediaWrap {
+        flex-direction: column;
     }
 }
