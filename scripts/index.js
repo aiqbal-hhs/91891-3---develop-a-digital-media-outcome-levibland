@@ -114,6 +114,8 @@ heroButton.addEventListener('mouseleave', () => {
  */
 
 window.onload = () => {
+    // get the current year, this saves us from having to change the copyright section every year.
     let year = new Date().getFullYear();
+    // onload set the websiteRights element to have the following text
     websiteRights.innerHTML = "Feng Shui © " + year + " All Rights Reserved. | Website by Levi Bland.";
 }
