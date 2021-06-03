@@ -413,8 +413,7 @@ html {
 }
 
 .FormButton:hover {
-    background: var(--white);
-    color: #000;
+    transform: scale(1.05) translate(5px);
 }
 
 @media screen and (max-width: 820px) {
