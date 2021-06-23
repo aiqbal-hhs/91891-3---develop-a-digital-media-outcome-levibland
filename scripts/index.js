@@ -1,5 +1,4 @@
 // TODO: Remove all unused variables and functions
-// TODO: Standardise comments
 
 /**
  * @dev Constants
